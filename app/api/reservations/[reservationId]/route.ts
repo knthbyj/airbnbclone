@@ -8,6 +8,8 @@ interface IParams {
     reservationId?: string;
 };
 
+export const dynamic = 'auto';
+
 export async function DELETE(
     request: Request,
     { params }: { params:IParams }

@@ -7,6 +7,8 @@ interface IParams {
     listingId?: string;   
 }
 
+export const dynamic = 'auto';
+
 export async function POST(
     request: Request,
     { params }: { params: IParams }

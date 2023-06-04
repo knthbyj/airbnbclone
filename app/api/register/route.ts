@@ -3,6 +3,8 @@ import  bcrypt from 'bcrypt';
 import prisma from "@/app/lib/prismadb"
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'auto';
+
 export async function POST(
     request: Request
 ) {
