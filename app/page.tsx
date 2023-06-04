@@ -7,11 +7,12 @@ import getListings, { IListingsParams } from './actions/getListings';
 import ListingCard from './components/listings/ListingCard';
 import getCurrentUser from './actions/getCurrentUser';
 
+
+export const dynamic = 'auto';
 interface HomeProps {
   searchParams: IListingsParams;
 }
 
-export const dynamic = 'auto';
 
 const Home = async ({ searchParams }: HomeProps) => {
   const listings = await getListings(searchParams);
