@@ -7,7 +7,7 @@ interface IParams {
 
 }
 
-export default async function getReservation(
+export default async function getReservations(
     params: IParams
 ) {
     try {
